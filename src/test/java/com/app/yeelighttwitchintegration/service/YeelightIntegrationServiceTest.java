@@ -26,13 +26,22 @@ class YeelightIntegrationServiceTest {
     }
 
     @Test
-    void setPowerOnTest() {
-        yeelightClient.setPowerOn();
+    void
+    setPowerOnTest() {
+        String response = yeelightClient.setPowerOn();
+        System.out.println(response);
     }
 
     @Test
     void setPowerOffTest() {
-        yeelightClient.setPowerOff();
+        String respose = yeelightClient.setPowerOff();
+        System.out.println(respose);
+    }
+
+    @Test
+    void colorFlowTest() {
+        String response = yeelightClient.colorFlowMode();
+        System.out.println(response);
     }
 
 }

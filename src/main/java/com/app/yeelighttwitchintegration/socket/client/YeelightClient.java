@@ -38,12 +38,16 @@ public class YeelightClient {
         return resp;
     }
 
-    public void setPowerOn() {
-        sendMessage(CommandsYeelight.POWER_ON);
+    public String setPowerOn() {
+        return sendMessage(CommandsYeelight.POWER_ON);
     }
 
-    public void setPowerOff() {
-        sendMessage(CommandsYeelight.POWER_OFF);
+    public String setPowerOff() {
+        return sendMessage(CommandsYeelight.POWER_OFF);
+    }
+
+    public String colorFlowMode() {
+        return sendMessage(CommandsYeelight.COLOR_FLOW);
     }
 
     public void stopConnection() {
