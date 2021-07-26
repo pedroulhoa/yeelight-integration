@@ -1,4 +1,4 @@
-package com.app.yeelighttwitchintegration.service;
+package com.app.yeelighttwitchintegration.socket.client;
 
 import com.app.yeelighttwitchintegration.socket.client.YeelightClient;
 import org.junit.jupiter.api.AfterAll;
@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-class YeelightIntegrationServiceTest {
+class YeelightIntegrationClientTest {
 
     @Autowired
     private YeelightClient yeelightClient;
