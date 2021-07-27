@@ -1,4 +1,4 @@
-package com.app.yeelighttwitchintegration.utils;
+package com.app.yeelightintegration.utils;
 
 public class CommandsYeelight {
 

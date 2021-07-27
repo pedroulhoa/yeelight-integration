@@ -1,1 +1,2 @@
-# yeelight-twitch-integration
+# yeelight-integration
+Socket communication with Yeelight Bulb Color lighting device.

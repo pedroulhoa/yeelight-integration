@@ -1,13 +1,13 @@
-package com.app.yeelighttwitchintegration;
+package com.app.yeelightintegration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YeelightTwitchIntegrationApplication {
+public class YeelightIntegrationApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(YeelightTwitchIntegrationApplication.class, args);
+        SpringApplication.run(YeelightIntegrationApplication.class, args);
     }
 
 }

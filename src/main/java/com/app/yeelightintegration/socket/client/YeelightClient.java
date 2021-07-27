@@ -1,6 +1,6 @@
-package com.app.yeelighttwitchintegration.socket.client;
+package com.app.yeelightintegration.socket.client;
 
-import com.app.yeelighttwitchintegration.utils.CommandsYeelight;
+import com.app.yeelightintegration.utils.CommandsYeelight;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

@@ -1,11 +1,11 @@
-package com.app.yeelighttwitchintegration.socket.client;
+package com.app.yeelightintegration.socket.client;
 
-import com.app.yeelighttwitchintegration.socket.client.YeelightClient;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
@@ -15,9 +15,15 @@ class YeelightIntegrationClientTest {
     @Autowired
     private YeelightClient yeelightClient;
 
+    @Value( "${yeelight.ip}" )
+    private String ip;
+
+    @Value( "${yeelight.port}" )
+    private int port;
+
     @BeforeAll
     void init() {
-        yeelightClient.startConnection("192.168.1.70", 55443);
+        yeelightClient.startConnection(ip, port);
     }
 
     @AfterAll
